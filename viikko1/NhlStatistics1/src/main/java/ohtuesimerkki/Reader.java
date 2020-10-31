@@ -6,4 +6,5 @@ public interface Reader {
 
     List<Player> getPlayers();
     
+    
 }

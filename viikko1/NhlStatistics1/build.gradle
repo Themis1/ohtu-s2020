@@ -18,8 +18,15 @@ run{
     standardInput = System.in
 }
 
-//jar {
-//    manifest {
-//        attributes 'Main-Class': 'ohtuesimerkki.Main'
-//    }
-//}
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtuesimerkki.Main'
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
